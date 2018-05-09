@@ -6,12 +6,14 @@ div{display: inline-block; text-align: center;}
     background-color:#696969;
     width: 50%;
     height: 100px;
+    text-align: left;
 }
 #div1_1{
     background-color: #696969;
     width: 50%;
     height: 100px;
     float:right;
+    text-align: center;
 }
 #div2{
     background-color: gray;
@@ -20,17 +22,76 @@ div{display: inline-block; text-align: center;}
 }
 #div3{
     background-color: darkgray;
-    width: 15%;
-    height: 700px;
+    width: 200px;
+    height: calc(100vh - 100px);
 }
 #div4{
     background-color: #F5F5F5;
-    width: 85%;
-    height: 700px;
-    float: right
+    width: calc(100% - 200px);
+    height: auto;
+    float: right;
+    display: inline-block;
 }
 #div5{
     background-color: #696969;
     width: 100%;
     height: 100px;
+    text-align: center;
 }
+.menu_button {
+    width: 200px;
+    height: calc(46px - 5px);
+    background-color: gainsboro;
+    display: inline-block;
+    font-size: 1.5em;
+    padding-top: calc((46px - 1.5em) / 2);
+    margin: 10px 30px;
+}
+.menu_button:hover {
+    cursor: pointer;
+    background-color: darkgray;
+}
+
+.input_type {
+    width: 140px;
+}
+#submit_type {
+    border-style: none;
+    background-color: gainsboro;
+    width: 70px;
+    height: 28px;
+   
+
+    
+}
+#div3 p {
+    text-align: left;
+}
+#submit_type:hover {
+    cursor: pointer;
+    background-color: dimgray;
+}
+
+#div4 ul {
+    list-style: none;
+    padding-left: 0;
+}
+#div4 ul li {
+    display: inline-block;
+    float: left;
+    width: calc((100% / 3) - 25px);
+    padding: 10px 10px;
+}
+#div4 ul li img{
+    width: 300px;
+    height: 350px;
+    background-size: cover;
+    
+}
+.atag {
+    display: none;
+}
+#atag2 {
+    display: none;
+}
+
